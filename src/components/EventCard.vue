@@ -8,20 +8,8 @@
 <script>
 export default {
   name: 'EventCard',
-  //props: {
-  //  msg: String,
-  //},
-  data() {
-    return {
-      event: {
-        id: 1,
-        title: 'Event Title',
-        description: 'Event Description',
-        location: 'Event Location',
-        date: 'Event Date',
-        time: 'Event Time',
-      },
-    }
+  props: {
+    event: Object,
   },
 }
 </script>
