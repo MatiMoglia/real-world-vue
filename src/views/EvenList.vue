@@ -9,6 +9,7 @@
 <script>
 // @ is an alias to /src
 import EventCard from '@/components/EventCard.vue'
+//import axios from 'axios'
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
@@ -45,6 +46,11 @@ export default {
         },
       ],
     }
+  },
+  async created() {
+    /*const response = await axios.get().then(response) => {
+      this.events = response.dataevents = response.data
+    }*/
   },
 }
 </script>
